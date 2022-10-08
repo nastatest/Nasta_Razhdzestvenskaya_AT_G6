@@ -30,6 +30,9 @@ public class CycleTaskRunner {
         TrainArrayReplace trainArrayReplace = new TrainArrayReplace();
         trainArrayReplace.replaceArrayMembers();
 
-
+        TrainArraySort trainArraySort = new TrainArraySort();
+        trainArraySort.print();
+        trainArraySort.sortArray();
+        trainArraySort.print();
     }
 }
