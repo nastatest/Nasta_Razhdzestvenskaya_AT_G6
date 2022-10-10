@@ -13,14 +13,18 @@ public class TrainArraySquare {
         }
     }
 
-    public void squareArray() {
-        for (int x : array) {
-            System.out.print(x + " ");
+    public void print() {
+        for (int arrayMember : array) {
+            System.out.print(arrayMember + " ");
         }
         System.out.println();
-        for (int x : array) {
-            x = x * x;
-            System.out.print(x + " ");
+    }
+
+    public void squareArray() {
+
+        for (int arrayMember : array) {
+            arrayMember = arrayMember * arrayMember;
+            System.out.print(arrayMember + " ");
         }
         System.out.println();
     }

@@ -10,8 +10,6 @@ public class Sauce {
         this.color = color;
     }
 
-    // public Sauce() {}
-
     public String getName() {
         return name;
     }

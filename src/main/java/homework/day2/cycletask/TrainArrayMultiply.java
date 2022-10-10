@@ -12,14 +12,18 @@ public class TrainArrayMultiply {
             array[i] = random.nextInt(array.length);
         }
     }
-    public void multiplyArray() {
-        for (int x : array) {
-            System.out.print(x + " ");
+
+    public void print() {
+        for (int arrayMember : array) {
+            System.out.print(arrayMember + " ");
         }
         System.out.println();
-        for (int x : array) {
-            x = x * 5;
-            System.out.print(x + " ");
+    }
+
+    public void multiplyArray() {
+        for (int arrayMember : array) {
+            arrayMember = arrayMember * 5;
+            System.out.print(arrayMember + " ");
         }
         System.out.println();
     }

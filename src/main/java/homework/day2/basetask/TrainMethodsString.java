@@ -17,5 +17,4 @@ public class TrainMethodsString {
     public void printMamaString(String mamaString) {
         System.out.println("мама мыла " + mamaString);
     }
-
 }

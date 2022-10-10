@@ -2,8 +2,8 @@ package main.java.homework.day2.basetask;
 
 public class TrainMethodsPrimitive {
 
-    public void printInt(int integer) {
-        System.out.println("я получил на вход число " + integer);
+    public void printInt(int intNum) {
+        System.out.println("я получил на вход число " + intNum);
     }
 
     public void printLong(long longNum) {
@@ -33,5 +33,4 @@ public class TrainMethodsPrimitive {
     public void printBoolean(boolean bool) {
         System.out.println("я получил на вход булево " + bool);
     }
-
 }

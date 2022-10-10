@@ -4,6 +4,7 @@ import java.util.Random;
 
 public class TrainArrayMin {
     int[] array;
+
     public TrainArrayMin() {
         array = new int[10];
         Random random = new Random();
@@ -11,27 +12,24 @@ public class TrainArrayMin {
             array[i] = random.nextInt(array.length);
         }
     }
-    public void findMinValue() {
-        for (int x : array) {
-            System.out.print(x + " ");
+
+    public void print() {
+        for (int arrayMember : array) {
+            System.out.print(arrayMember + " ");
         }
         System.out.println();
+    }
 
-        int minValue;
+    public void findMinValue() {
 
-        if (array[0] < array[1]) {
-            minValue = array[0];
-        }
-        else {
-            minValue = array[1];
-        }
+        int arrayMember = array[0];
 
-        for (int i = 2; i < array.length; i++) {
-            if (array[i] < minValue) {
-                minValue = array[i];
+        for (int i = 1; i < array.length; i++) {
+            if (array[i] < arrayMember) {
+                arrayMember = array[i];
             }
         }
-        System.out.println(minValue);
+        System.out.println(arrayMember);
         System.out.println();
     }
 }

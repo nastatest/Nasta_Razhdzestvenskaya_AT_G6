@@ -1,44 +1,35 @@
 package main.java.homework.day2.basetask;
 
 public class TrainMethodsReturn {
-    public int returnNewInt(int x) {
-        int newInt = x * 3;
-        return newInt;
+    public int returnNewInt(int intNum) {
+        return intNum * 3;
     }
 
-    public long returnNewLong(long y) {
-        long newLong = y - 4;
-        return newLong;
+    public long returnNewLong(long longNum) {
+        return longNum - 4;
     }
 
-    public String returnNewChar(char a) {
-        String newChar = Character.toString(a) + Character.toString(a);
-        return newChar;
+    public String returnNewChar(char character) {
+        return Character.toString(character) + Character.toString(character);
     }
 
-    public float returnNewFloat(float b) {
-        float newFloat = b / 2;
-        return newFloat;
+    public float returnNewFloat(float floatNum) {
+        return floatNum / 2;
     }
 
-    public double returnNewDouble(double c) {
-        double newDouble = c + 8;
-        return newDouble;
+    public double returnNewDouble(double doubleNum) {
+        return doubleNum + 8;
     }
 
-    public int returnNewShort(short d) {
-        int newShort = d - 1;
-        return newShort;
+    public int returnNewShort(short shortNum) {
+        return shortNum - 1;
     }
 
-    public int returnNewByte(byte e) {
-        int newByte = e * 2;
-        return newByte;
+    public int returnNewByte(byte byteNum) {
+        return byteNum * 2;
     }
 
-    public boolean returnNewBoolean(boolean f) {
-        boolean newBoolean = !f;
-        return newBoolean;
+    public boolean returnNewBoolean(boolean bool) {
+        return !bool;
     }
-
 }

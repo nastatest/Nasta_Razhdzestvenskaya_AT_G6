@@ -14,8 +14,8 @@ public class TrainArraySort {
     }
 
     public void print() {
-        for (int x : array) {
-            System.out.print(x + " ");
+        for (int arrayMember : array) {
+            System.out.print(arrayMember + " ");
         }
         System.out.println();
     }
@@ -30,7 +30,7 @@ public class TrainArraySort {
         for (int i = array.length - 1; i >= 1; i--) {
             for (int x = 0; x < i; x++) {
                 if (array[x] < array[x + 1]) {
-                    replace( x, x + 1);
+                    replace(x, x + 1);
                 }
             }
         }
