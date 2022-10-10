@@ -4,6 +4,7 @@ import java.util.Random;
 
 public class TrainArrayReplace {
     int[] array;
+
     public TrainArrayReplace() {
         array = new int[10];
         Random random = new Random();
@@ -12,21 +13,19 @@ public class TrainArrayReplace {
         }
     }
 
-    public void replaceArrayMembers() {
-        for (int x : array) {
-            System.out.print(x + " ");
+    public void print() {
+        for (int arrayMember : array) {
+            System.out.print(arrayMember + " ");
         }
         System.out.println();
+    }
+
+    public void replaceArrayMembers() {
 
         int firstMember = array[0];
-        int lastMember = array[array.length-1];
+        int lastMember = array[array.length - 1];
 
         array[0] = lastMember;
-        array[array.length-1] = firstMember;
-
-        for (int i : array) {
-            System.out.print(i + " ");
-        }
-        System.out.println();
+        array[array.length - 1] = firstMember;
     }
 }

@@ -4,6 +4,7 @@ import java.util.Random;
 
 public class TrainArrayPrint {
     int[] array;
+
     public TrainArrayPrint() {
         array = new int[10];
         Random random = new Random();
@@ -11,6 +12,7 @@ public class TrainArrayPrint {
             array[i] = random.nextInt(array.length);
         }
     }
+
     public void printArray() {
         for (int i : array) {
             System.out.print(i + " ");

@@ -10,6 +10,6 @@ public class TrainMethodsIfRunner {
         System.out.println("метод returnNewChar вернул " + train.returnNewChar('k'));
         System.out.println("метод returnNewFloat вернул " + train.returnNewFloat(0.5f));
         System.out.println("метод returnNewDouble вернул " + train.returnNewDouble(225.225));
-        train.returnNewBoolean(true);
+        train.returnNewBoolean(false);
     }
 }

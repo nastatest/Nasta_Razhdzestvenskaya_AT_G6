@@ -10,8 +10,6 @@ public class Mouse {
         this.age = age;
     }
 
-    // public Mouse() { } ці трэба ствараць канструктар без параметраў?
-
     public String getName() {
         return name;
     }
