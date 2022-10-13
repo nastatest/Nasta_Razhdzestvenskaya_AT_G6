@@ -5,7 +5,7 @@ public class Bottle {
     //есть метод open(), который вызывает метод degas() в газировке
 
     private double volume;
-    private Water water;
+   // private Water water;
 
     public Bottle(double volume) { // бутылка заполняется массивом из пузырьков
                                     // из рассчета 10000 на каждый литр
@@ -19,11 +19,11 @@ public class Bottle {
 
     }
 
-    public Water getWater() { //возвращающий обьект воды
+   // public Water getWater() { }//возвращающий обьект воды
 
-    }
 
-    public setWater(Water water) { //добавляющий новый обьект воды
 
-    }
+    //public setWater(Water water) { }//добавляющий новый обьект воды
+
+
 }
