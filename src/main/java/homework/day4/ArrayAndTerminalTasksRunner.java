@@ -8,6 +8,6 @@ public class ArrayAndTerminalTasksRunner {
         task.sumOfElements(new int[]{1, 2, 3, 4, 5}, 2);
 
         task.inverseArray(new int[]{1, 2, 3, 4, 5, 6, 7, 8}, 5);
-        task.print(newArray);
+        //task.print(newArray);
     }
 }

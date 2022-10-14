@@ -22,14 +22,14 @@ public class ArrayAndTerminalTasks {
         for (int i = array.length - 1; i >= 0; i--) {
             if (array[i] > n) {
                 for (int newArrayIndex = 0; ; newArrayIndex++) {
-                    newArray[newArrayIndex] = array[i];
+                    newArray = array[i];
                 }
             }
         }
         return newArray;
-        for (int arrayMember : newArray) {
-            System.out.print(arrayMember + " ");
-        }
-        System.out.println();
+        //for (int arrayMember : newArray) {
+        //    System.out.print(arrayMember + " ");
+        //}
+        //System.out.println();
     }
 }
