@@ -7,7 +7,7 @@ public class ArrayAndTerminalTasksRunner {
         ArrayAndTerminalTasks task = new ArrayAndTerminalTasks();
         task.sumOfElements(new int[]{1, 2, 3, 4, 5}, 2);
 
-        task.inverseArray(new int[]{1, 2, 3, 4, 5, 6, 7, 8}, 5);
-        //task.print(newArray);
+        int[] newArray = task.inverseArray(new int[]{1, 2, 3, 4, 5, 6, 7, 8}, 3);
+        task.print(newArray);
     }
 }
