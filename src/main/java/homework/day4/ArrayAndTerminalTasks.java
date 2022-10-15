@@ -1,5 +1,6 @@
 package main.java.homework.day4;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 
 public class ArrayAndTerminalTasks {
@@ -31,5 +32,25 @@ public class ArrayAndTerminalTasks {
             newArray[x] = tempArray.get(x);
         }
         return newArray;
+    }
+
+    public int multipleMonthSum(int[] array) {
+        int sum = 0;
+        LocalDate currentDate = LocalDate.now();
+        for (int arrayMember:
+             array) {
+            if (arrayMember % currentDate.getMonthValue() == 0) {
+                sum += arrayMember;
+            }
+        }
+        return sum;
+    }
+
+    public void printHorsePicture() {
+        System.out.print("\t  ^__^\n");
+        System.out.print("\t  (oo)\\\\_______\n");
+        System.out.print("\t (__)\\ ) \\/\\  \\\n");
+        System.out.print("\t      ||----w |\\\n");
+        System.out.print("\t      ||     ||\n");
     }
 }
