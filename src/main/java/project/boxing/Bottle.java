@@ -1,29 +1,33 @@
 package main.java.project.boxing;
 
+import main.java.project.bubbles.Bubble;
+import main.java.project.water.Water;
+
 public class Bottle {
-    //есть вода
-    //есть метод open(), который вызывает метод degas() в газировке
 
     private double volume;
-   // private Water water;
+    private Water water;
 
-    public Bottle(double volume) { // бутылка заполняется массивом из пузырьков
-                                    // из рассчета 10000 на каждый литр
+    public Bottle(double volume) {
+        this.volume = volume;
+        int bubblesCount = (int) (volume * 10000);
+        Bubble[] bubbles = new Bubble[bubblesCount];
+        water.pump(bubbles);
     }
 
-    public void open() { // меняет состояние воды в "открытое"
-                        // (приблизительно, как this.water.setOpened(true);)
+    public void open() {
+        water.setOpened(true);
     }
 
-    public void warm(int temperature) { //устанавливает температуру воды в бутылке
-
+    public void warm(int temperature) {
+        water.setTemperature(temperature);
     }
 
-   // public Water getWater() { }//возвращающий обьект воды
+   public Water getWater() {
+        return water;
+   }
 
-
-
-    //public setWater(Water water) { }//добавляющий новый обьект воды
-
-
+   public void setWater(Water water) {
+        this.water = water;
+   }
 }
