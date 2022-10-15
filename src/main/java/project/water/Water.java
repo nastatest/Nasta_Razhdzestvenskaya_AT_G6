@@ -1,5 +1,7 @@
 package main.java.project.water;
 
+import main.java.project.bubbles.Bubble;
+
 public abstract class Water {
 
     private String color = "no";
@@ -38,4 +40,10 @@ public abstract class Water {
     public void setTemperature(int temperature) {
         this.temperature = temperature;
     }
+
+    protected abstract void degas();
+
+    public abstract void pump(Bubble[] bubbles);
+
+    public abstract void setOpened(boolean isOpened);
 }
