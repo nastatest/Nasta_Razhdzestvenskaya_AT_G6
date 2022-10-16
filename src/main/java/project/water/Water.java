@@ -41,9 +41,4 @@ public abstract class Water {
         this.temperature = temperature;
     }
 
-    protected abstract void degas();
-
-    public abstract void pump(Bubble[] bubbles);
-
-    public abstract void setOpened(boolean isOpened);
 }
