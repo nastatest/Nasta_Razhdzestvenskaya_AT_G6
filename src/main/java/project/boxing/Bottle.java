@@ -10,13 +10,14 @@ public class Bottle {
 
     public Bottle(double volume) {
         this.volume = volume;
+        //this.water = new SparklingWater();
         int bubblesCount = (int) (volume * 10000);
         Bubble[] bubbles = new Bubble[bubblesCount];
-        water.pump(bubbles);
+        water.pump(bubbles); //SparklingWater
     }
 
     public void open() {
-        water.setOpened(true);
+        water.setOpened(true); //SparklingWater //if instanceOf SparklingWater??
     }
 
     public void warm(int temperature) {
