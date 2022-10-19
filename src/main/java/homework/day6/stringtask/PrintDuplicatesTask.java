@@ -4,7 +4,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class PrintDuplicatesTask {
-    private String regex="(\\b\\w+\\b).*\\1";
+    private String regex = "(\\b\\w+\\b).*\\1";
 
     public void printDuplicates(String string) {
         Pattern pattern = Pattern.compile(regex);
@@ -12,6 +12,5 @@ public class PrintDuplicatesTask {
         while (matcher.find()) {
             System.out.println(matcher.group(1));
         }
-
     }
 }
