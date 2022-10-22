@@ -1,8 +1,6 @@
-package main.java.project.water;
+package main.java.project.contents;
 
-import main.java.project.bubbles.Bubble;
-
-public abstract class Water {
+public abstract class Water implements Transformable {
 
     private String color = "no";
     private String transparency = "transparent";
