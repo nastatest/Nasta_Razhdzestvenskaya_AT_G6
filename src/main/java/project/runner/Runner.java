@@ -1,6 +1,6 @@
 package main.java.project.runner;
 
-import main.java.project.boxing.Bottle;
+import main.java.project.vessels.Bottle;
 
 public class Runner {
 

@@ -1,10 +1,11 @@
-package main.java.project.boxing;
+package main.java.project.vessels;
 
 import main.java.project.bubbles.Bubble;
-import main.java.project.water.SparklingWater;
-import main.java.project.water.Water;
+import main.java.project.contents.SparklingWater;
+import main.java.project.contents.Transformable;
+import main.java.project.contents.Water;
 
-public class Bottle {
+public class Bottle extends Vessel implements Containable {
 
     private double volume;
     private Water water;
@@ -21,9 +22,38 @@ public class Bottle {
         ((SparklingWater) water).pump(bubbles);
     }
 
+    public Bottle() {
+
+    }
+
+    @Override
+    public void addStuff(Transformable stuff) {
+
+    }
+
+    @Override
+    public Transformable removeStuff() {
+        return null;
+    }
+
+    @Override
+    public boolean isEmpty() {
+        return false;
+    }
+
+    @Override
+    public int getFreeSpace() {
+        return 0;
+    }
+
     public void open() throws InterruptedException {
         System.out.println("The state of bottle is opened now.");
         ((SparklingWater) water).setOpened(true);
+    }
+
+    @Override
+    public void close() {
+
     }
 
     public void warm(int temperature) {
@@ -37,5 +67,15 @@ public class Bottle {
 
     public void setWater(Water water) {
         this.water = water;
+    }
+
+    @Override
+    public double getVolume() {
+        return volume;
+    }
+
+    @Override
+    public void setVolume(double volume) {
+        this.volume = volume;
     }
 }

@@ -1,4 +1,4 @@
-package main.java.project.water;
+package main.java.project.contents;
 
 import main.java.project.bubbles.Bubble;
 
@@ -49,6 +49,11 @@ public class SparklingWater extends Water {
     public boolean isSparkle() {
         System.out.println("Checking if water still contains any bubbles.");
         return bubbles.length != 0;
+    }
+
+    @Override
+    public void mix() {
+
     }
 }
 
