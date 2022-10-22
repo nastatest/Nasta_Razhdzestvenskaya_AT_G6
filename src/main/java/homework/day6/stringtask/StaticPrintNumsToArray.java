@@ -4,9 +4,8 @@ import java.util.ArrayList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class PrintNumsToArrayTask {
-
-    public void printNumsToArray(String string) {
+public class StaticPrintNumsToArray {
+    public static void printNumsToArray(String string) {
         Pattern pattern = Pattern.compile("\\d");
         Matcher matcher = pattern.matcher(string);
         ArrayList<Integer> tempArray = new ArrayList<>();

@@ -3,10 +3,10 @@ package main.java.homework.day6.stringtask;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class PrintDuplicatesTask {
-    private String regex = "(\\b\\w+\\b).*\\1";
+public class StaticPrintDuplicates {
+    private static String regex = "(\\b\\w+\\b).*\\1";
 
-    public void printDuplicates(String string) {
+    public static void printDuplicates(String string) {
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(string);
         while (matcher.find()) {

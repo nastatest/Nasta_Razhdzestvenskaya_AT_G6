@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class PrintAccessAttemptsFromLogTask {
-    public void printAccessAttemptFromLog(String log) {
+public class StaticPrintAccessAttemptsFromLog {
+    public static void printAccessAttemptFromLog(String log) {
         Pattern pattern = Pattern.compile("(\\b((25[0-5]|2[0-4][0-9]|1[0-9][0-9]|0?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|0?[0-9][0-9]?)\\b)\\s(granted|denied)");
         Matcher matcher = pattern.matcher(log);
         ArrayList<IpAndStatus> tempArray = new ArrayList<>();

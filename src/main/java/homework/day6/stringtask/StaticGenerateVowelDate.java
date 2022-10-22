@@ -1,12 +1,11 @@
 package main.java.homework.day6.stringtask;
 
 import java.time.LocalDateTime;
-import java.util.Date;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class GenerateVowelDateTask {
-    public void generateVowelDate(String string) {
+public class StaticGenerateVowelDate {
+    public static void generateVowelDate(String string) {
         Pattern pattern = Pattern.compile("[уеёэоаыяиюУЕЁЭОАЫЯИЮ]");
         Matcher matcher = pattern.matcher(string);
 
