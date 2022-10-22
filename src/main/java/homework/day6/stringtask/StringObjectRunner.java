@@ -32,5 +32,9 @@ public class StringObjectRunner {
 
         FormatDateTask formatDateTask = new FormatDateTask();
         formatDateTask.formatDate("22.00 07.09.2020");
+        System.out.println();
+
+        GenerateVowelDateTask generateVowelDateTask = new GenerateVowelDateTask();
+        generateVowelDateTask.generateVowelDate("блаблаблаоооооооооооооооооооооооеееееееееееееееееУУЦ");
     }
 }
