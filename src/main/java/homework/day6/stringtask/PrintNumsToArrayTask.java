@@ -20,5 +20,6 @@ public class PrintNumsToArrayTask {
         for (int arrayMember : numArray) {
             System.out.print(arrayMember + " ");
         }
+        System.out.println();
     }
 }

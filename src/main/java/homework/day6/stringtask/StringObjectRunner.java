@@ -13,5 +13,17 @@ public class StringObjectRunner {
         PrintNumsToArrayTask printNumsToArrayTask = new PrintNumsToArrayTask();
         printNumsToArrayTask.printNumsToArray("abc1 ac 23 qw45 rty qwe 6 rty 7asd8f90");
         System.out.println();
+
+        PrintAccessAttemptsFromLogTask printAccessAttemptsFromLogTask = new PrintAccessAttemptsFromLogTask();
+        printAccessAttemptsFromLogTask.printAccessAttemptFromLog("access_log.2020.09.07 212.168.101.5 granted\n" +
+                "access_log.2020.09.07 212.168.101.6 denied\n" +
+                "access_log.2020.09.07 21.168.101.6 granted\n" +
+                "access_log.2020.09.07 212.168.101.5 granted\n" +
+                "access_log.2020.09.07 212.168.101.6 denied\n" +
+                "access_log.2020.09.07 21.168.101.6 granted\n" +
+                "access_log.2020.09.07 212.168.101.5 granted\n" +
+                "access_log.2020.09.07 212.168.101.6 denied\n" +
+                "access_log.2020.09.07 21.168.101.6 granted\n");
+        System.out.println();
     }
 }
