@@ -3,6 +3,7 @@ package main.java.homework.day8.objects;
 import java.util.Objects;
 
 public class Person {
+
     private int age;
     private String name;
 

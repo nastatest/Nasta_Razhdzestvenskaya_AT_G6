@@ -3,6 +3,7 @@ package main.java.homework.day8.objects;
 import java.util.Objects;
 
 public class Sand {
+
     private int weight;
     private String name;
 

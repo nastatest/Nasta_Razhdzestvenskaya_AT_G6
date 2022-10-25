@@ -3,6 +3,7 @@ package main.java.homework.day8.objects;
 import java.util.Objects;
 
 public class Water {
+
     private String color;
     private String smell;
 

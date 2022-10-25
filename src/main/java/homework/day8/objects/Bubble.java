@@ -3,6 +3,7 @@ package main.java.homework.day8.objects;
 import java.util.Objects;
 
 public class Bubble {
+
     private int volume;
     private String name;
 

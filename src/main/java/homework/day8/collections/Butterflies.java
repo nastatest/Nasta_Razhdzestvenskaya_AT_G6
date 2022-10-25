@@ -1,7 +1,6 @@
 package main.java.homework.day8.collections;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 public class Butterflies {
@@ -16,9 +15,8 @@ public class Butterflies {
         butterflies.add("Common blue");
 
         for (String butterfly : butterflies) {
-            System.out.print("\"" + butterfly + "\" ");
+            System.out.println("\"" + butterfly + "\"");
         }
-        System.out.println();
 
         int oCount = 0;
         for (int i = 0; i < butterflies.size(); i++) {
@@ -36,6 +34,5 @@ public class Butterflies {
         for (String butterfly : butterflies) {
             System.out.println(butterfly);
         }
-        System.out.println();
     }
 }
