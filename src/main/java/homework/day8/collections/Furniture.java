@@ -1,7 +1,6 @@
 package main.java.homework.day8.collections;
 
 import main.java.homework.day8.objects.Chair;
-import main.java.homework.day8.objects.Sand;
 
 import java.util.*;
 
