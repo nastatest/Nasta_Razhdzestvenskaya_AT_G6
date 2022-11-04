@@ -17,7 +17,7 @@ public class PersonListTask {
                 .collect(Collectors.toList());
 
         List<String> fourNames = people.stream().filter(p -> p.getAge() < 21)
-                .peek(p -> System.out.println("name: " + p.getName() + ", surname: " + p.getSurname()))
+                .peek(p -> System.out.println("name: " + p.getName() + ", age: " + p.getAge()))
                 .sorted(Comparator.comparing(Person::getSurname).thenComparing(Person::getName))
                 .limit(4)
                 .map(Person::getName)
