@@ -27,8 +27,7 @@ public class CycleTaskRunner {
         trainArraySquare.squareArray();
 
         TrainArrayMin trainArrayMin = new TrainArrayMin();
-        trainArrayMin.print();
-        trainArrayMin.findMinValue();
+        trainArrayMin.trainArrayMinViaStream();
 
         TrainArrayReplace trainArrayReplace = new TrainArrayReplace();
         trainArrayReplace.print();
