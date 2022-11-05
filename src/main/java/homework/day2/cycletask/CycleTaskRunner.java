@@ -13,14 +13,13 @@ public class CycleTaskRunner {
         trainArray.createArrayViaStream();
 
         TrainArrayPrint trainArrayPrint = new TrainArrayPrint();
-        trainArrayPrint.printArray();
+        trainArrayPrint.printArrayViaStream();
 
         TrainArrayInverse trainArrayInverse = new TrainArrayInverse();
         trainArrayInverse.printArrayInverseViaStream();
 
         TrainArrayMultiply trainArrayMultiply = new TrainArrayMultiply();
-        trainArrayMultiply.print();
-        trainArrayMultiply.multiplyArray();
+        trainArrayMultiply.multiplyArrayViaStream();
 
         TrainArraySquare trainArraySquare = new TrainArraySquare();
         trainArraySquare.print();
