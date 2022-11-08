@@ -10,26 +10,23 @@ public class CycleTaskRunner {
         trainFor.printOdd();
 
         TrainArray trainArray = new TrainArray();
-        trainArray.createArray();
+        trainArray.createArrayViaStream();
 
         TrainArrayPrint trainArrayPrint = new TrainArrayPrint();
-        trainArrayPrint.printArray();
+        trainArrayPrint.printArrayViaStream();
 
         TrainArrayInverse trainArrayInverse = new TrainArrayInverse();
-        trainArrayInverse.print();
-        trainArrayInverse.printArrayInverse();
+        trainArrayInverse.printArrayInverseViaStream();
 
         TrainArrayMultiply trainArrayMultiply = new TrainArrayMultiply();
-        trainArrayMultiply.print();
-        trainArrayMultiply.multiplyArray();
+        trainArrayMultiply.multiplyArrayViaStream();
 
         TrainArraySquare trainArraySquare = new TrainArraySquare();
         trainArraySquare.print();
         trainArraySquare.squareArray();
 
         TrainArrayMin trainArrayMin = new TrainArrayMin();
-        trainArrayMin.print();
-        trainArrayMin.findMinValue();
+        trainArrayMin.trainArrayMinViaStream();
 
         TrainArrayReplace trainArrayReplace = new TrainArrayReplace();
         trainArrayReplace.print();

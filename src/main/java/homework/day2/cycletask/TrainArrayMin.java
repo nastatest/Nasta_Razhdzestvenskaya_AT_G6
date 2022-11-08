@@ -1,35 +1,22 @@
 package main.java.homework.day2.cycletask;
 
+import java.util.List;
 import java.util.Random;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class TrainArrayMin {
-    int[] array;
 
-    public TrainArrayMin() {
-        array = new int[10];
+    public void trainArrayMinViaStream() {
+
         Random random = new Random();
-        for (int i = 0; i < array.length; i++) {
-            array[i] = random.nextInt(array.length);
-        }
-    }
 
-    public void print() {
-        for (int arrayMember : array) {
-            System.out.print(arrayMember + " ");
-        }
-        System.out.println();
-    }
+        List<Integer> array = Stream.generate(() -> random.nextInt(10))
+                .limit(10)
+                .collect(Collectors.toList());
 
-    public void findMinValue() {
+        System.out.println(array);
 
-        int arrayMember = array[0];
-
-        for (int i = 1; i < array.length; i++) {
-            if (array[i] < arrayMember) {
-                arrayMember = array[i];
-            }
-        }
-        System.out.println(arrayMember);
-        System.out.println();
+        System.out.println("Min value is: " + array.stream().min(Integer::compareTo).get());
     }
 }

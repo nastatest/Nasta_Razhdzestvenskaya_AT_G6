@@ -1,22 +1,20 @@
 package main.java.homework.day2.cycletask;
 
+import java.util.List;
 import java.util.Random;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class TrainArrayPrint {
-    int[] array;
 
-    public TrainArrayPrint() {
-        array = new int[10];
+    public void printArrayViaStream() {
+
         Random random = new Random();
-        for (int i = 0; i < array.length; i++) {
-            array[i] = random.nextInt(array.length);
-        }
-    }
 
-    public void printArray() {
-        for (int i : array) {
-            System.out.print(i + " ");
-        }
-        System.out.println();
+        List<Integer> array = Stream.generate(() -> random.nextInt(10))
+                .limit(10)
+                .collect(Collectors.toList());
+
+        System.out.println(array);
     }
 }

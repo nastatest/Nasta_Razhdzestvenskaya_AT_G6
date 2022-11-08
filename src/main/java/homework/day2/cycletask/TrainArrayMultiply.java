@@ -1,30 +1,22 @@
 package main.java.homework.day2.cycletask;
 
+import java.util.List;
 import java.util.Random;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class TrainArrayMultiply {
-    int[] array;
 
-    public TrainArrayMultiply() {
-        array = new int[10];
+    public void multiplyArrayViaStream() {
+
         Random random = new Random();
-        for (int i = 0; i < array.length; i++) {
-            array[i] = random.nextInt(array.length);
-        }
-    }
 
-    public void print() {
-        for (int arrayMember : array) {
-            System.out.print(arrayMember + " ");
-        }
-        System.out.println();
-    }
+        List<Integer> array = Stream.generate(() -> random.nextInt(10))
+                .limit(10)
+                .collect(Collectors.toList());
 
-    public void multiplyArray() {
-        for (int arrayMember : array) {
-            arrayMember = arrayMember * 5;
-            System.out.print(arrayMember + " ");
-        }
-        System.out.println();
+        System.out.println(array);
+
+        System.out.println(array.stream().map(i -> i * 5).collect(Collectors.toList()));
     }
 }

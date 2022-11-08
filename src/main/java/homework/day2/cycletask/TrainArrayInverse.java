@@ -1,29 +1,30 @@
 package main.java.homework.day2.cycletask;
 
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
 import java.util.Random;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class TrainArrayInverse {
-    int[] array;
 
-    public TrainArrayInverse() {
-        array = new int[10];
+    public void printArrayInverseViaStream() {
+
         Random random = new Random();
-        for (int i = 0; i < array.length; i++) {
-            array[i] = random.nextInt(array.length);
-        }
-    }
 
-    public void print() {
-        for (int arrayMember : array) {
-            System.out.print(arrayMember + " ");
-        }
-        System.out.println();
-    }
+        List<Integer> array = Stream.generate(() -> random.nextInt(10))
+                .limit(10)
+                .collect(Collectors.toList());
 
-    public void printArrayInverse() {
-        for (int i = array.length - 1; i >= 0; i--) {
-            System.out.print(array[i] + " ");
-        }
-        System.out.println();
+        System.out.println(array);
+
+        List<Integer> reverseArray = array.stream()
+                .collect(Collectors.collectingAndThen(Collectors.toList(), l -> {
+                    Collections.reverse(l);
+                    return l;
+                }));
+
+        System.out.println(reverseArray);
     }
 }
