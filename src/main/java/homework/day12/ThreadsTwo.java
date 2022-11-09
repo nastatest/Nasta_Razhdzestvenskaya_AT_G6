@@ -69,15 +69,6 @@ public class ThreadsTwo {
         t5.start();
         t6.start();
         t7.start();
-
-        t1.join();
-        t2.join();
-        t3.join();
-        t4.join();
-        t5.join();
-        t6.join();
-        t7.join();
-
     }
 
     public static void createAndPeepEven() throws InterruptedException {

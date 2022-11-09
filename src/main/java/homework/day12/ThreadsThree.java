@@ -60,14 +60,6 @@ public class ThreadsThree {
         t4.start();
         t5.start();
         t6.start();
-
-        t1.join();
-        t2.join();
-        t3.join();
-        t4.join();
-        t5.join();
-        t6.join();
-
     }
 
     public static void createAndPeepOdd() throws InterruptedException {
