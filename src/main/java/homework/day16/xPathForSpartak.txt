@@ -1,0 +1,37 @@
+//img[@title='Спартак']
+//a[@class='header_logo_img']/img
+
+//div[@class='content_menu']/descendant::a[@href='/partners/']/span
+//body/descendant::a[@href='/partners/'][1]/span
+
+//i[@class='search fa search-btn lupa']
+//body/descendant::div[@class='header__search']/descendant::i
+
+//span[@class='header__eye']/a/img
+//a[@href='/?special_version=Y']/img
+
+//a[@class='header__lang__item header__lang__item_ru active']
+//div[@class='header__lang']/a[1]
+
+//a[@href='/cn/']
+//a[text() = 'Ch']
+
+//a[text()='Скачать каталог']
+//a[@class='download-catalog']
+
+//body/descendant::a[text() = 'Импрессо'][1]
+//body/descendant::div[@class='content_menu']/descendant::a[text() = 'Импрессо']
+
+//a[@class='flex-next']
+//li[@class='flex-nav-next']/a
+
+//a[text() = '2']
+//ol/li[2]/a
+
+//body/descendant::a[@href='https://vk.com/spartakby'][1]/img
+//body/descendant::ul[@class='social_list'][1]/li[1]/a/img
+
+//body/descendant::ul[@class='social_list'][1]/li[5]/a/img
+//body/descendant::a[@href='https://www.youtube.com/channel/UC2xYusMBxs4XkwoPotvTw4A'][1]/img
+
+

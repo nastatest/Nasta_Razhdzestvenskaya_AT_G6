@@ -1,0 +1,38 @@
+//img[@class='i-valign-middle']
+todo
+
+todo
+todo
+
+//a[text() = 'Mail.ru']
+//div[@class='grid__header']/descendant::a[1]
+
+//div[@class='grid__header']/descendant::a[3]
+//body/descendant::a[text() = 'Облако'][1]
+
+//a[text() = 'Регистрация']
+//div[@class='grid__header']/descendant::a[last()]
+
+//body/descendant::button[text() = 'Войти'][1]
+//div[@class='grid__header']/descendant::button
+
+//div[@class='search-arrow__border']/descendant::button
+//body/descendant::button[text() = 'Найти'][1]
+
+//body/descendant::a[text() = 'Почта'][2]
+//div[@class='mailbox-services svelte-giypkm']/a
+
+//a[text() = 'Леди']
+//a[@href='//lady.mail.ru/']
+
+//div[@class='grid_newscol svelte-3k1upp']/descendant::a[2]
+//li[@class='news-item-container'][2]/descendant::a
+
+//body/descendant::button[text() = 'Войти'][2]
+//div[@id='mailbox']/descendant::button
+
+//a[text() = 'Создать почту']
+//div[@id='mailbox']/descendant::a[last()]
+
+//a[text() = 'Подробнее']
+//div[@class='weather__header svelte-xn9nd0']/a[last()]
